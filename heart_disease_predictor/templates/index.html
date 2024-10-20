@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Model</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction Model</h1>
+
+        <div class="form-container">
+            <form action="/predict" method="POST">
+                <label>BMI: </label><input type="text" name="bmi" required><br>
+                <label>Smoking (Yes=1, No=0): </label><input type="text" name="smoking" required><br>
+                <label>Alcohol Drinking (Yes=1, No=0): </label><input type="text" name="alcohol_drinking" required><br>
+                <label>Stroke (Yes=1, No=0): </label><input type="text" name="stroke" required><br>
+                <label>Physical Health (days of poor health): </label><input type="text" name="physical_health" required><br>
+                <label>Mental Health (days of poor health): </label><input type="text" name="mental_health" required><br>
+                <label>Difficulty Walking (Yes=1, No=0): </label><input type="text" name="diff_walking" required><br>
+                <label>Age Category: </label><input type="text" name="age_category" required><br>
+                <label>Diabetic (Yes=1, No=0): </label><input type="text" name="diabetic" required><br>
+                <label>Physical Activity (Yes=1, No=0): </label><input type="text" name="physical_activity" required><br>
+                <label>Sleep Time (hours): </label><input type="text" name="sleep_time" required><br>
+                <label>General Health (0-4): </label><input type="text" name="gen_health" required><br>
+                <input type="submit" value="PREDICT">
+            </form>
+
+            <!-- Display prediction result -->
+            <div class="output-container">
+                <h2>Prediction Result:</h2>
+                <p>{{ prediction }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

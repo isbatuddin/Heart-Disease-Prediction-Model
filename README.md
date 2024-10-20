@@ -1,7 +1,4 @@
 ![Screenshot_25](https://github.com/user-attachments/assets/3e2cd9b2-fa52-48c2-a3f4-b36371d594e2)
-Here’s a sample **README.md** file that you can include in your GitHub repository for your **Heart Disease Prediction** project:
-
----
 
 # Heart Disease Prediction Model
 
